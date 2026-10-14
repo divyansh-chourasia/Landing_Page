@@ -1,72 +1,38 @@
-## Live https://landing-page-divyansh.netlify.app/
+# Landing page
 
-# Getting Started with Create React App
+A one-page site named Divyansh, plus two extra routes. A running copy is at https://landing-page-divyansh.netlify.app/.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The bar sticks to the top. Home, About, and Brands are hash links on `/`: `#home`, `#about`, and `#brands`. Contact goes to `/contact`. Services goes to `/services`. On a narrow screen the word Divyansh drops out of the bar and the links center.
 
-## Available Scripts
+Home opens with the name and the line "Solution to all your problems". The next block is a picture beside a short paragraph about a tech company and children. "Who we are?" is placeholder text. Brands is four icons, Google, Amazon, YouTube, and Instagram, each with its name. The icons are labels only.
 
-In the project directory, you can run:
+Contact is a form with name, email, and message. All three are required. Submit stays on the page. Services is a carousel of two slides, labeled Full Stack and Front-End. It advances every second, loops, and hides the arrows, thumbs, and status.
 
-### `npm start`
+The footer repeats the name, prints "@all right reserved", and links Follow Us to YouTube, Instagram, and GitHub.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Styles live in `src/styles/` as SCSS. `mediaquery.scss` changes the home sections and the contact card under 820px, and again under 700px.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run
 
-### `npm test`
+From this folder:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+Open [http://localhost:3000](http://localhost:3000).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm test` starts the test watcher. `npm run build` writes the production build. `npm run eject` copies the build config into the project, and that copy cannot be undone.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The references from that README:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Running tests](https://facebook.github.io/create-react-app/docs/running-tests)
+- [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Getting started](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React](https://reactjs.org/)
+- [Code splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Analyzing the bundle size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Making a progressive web app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Advanced configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [npm run build fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
